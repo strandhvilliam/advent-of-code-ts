@@ -8,7 +8,9 @@ export const readTestInputFile = async (year: string, day: string) => {
 	return text.split("\n");
 };
 
-export class CircularArray<T> {
+
+
+/* export class CircularArray<T> {
 	private _values: T[];
 
 	constructor(values: T[]) {
@@ -44,4 +46,4 @@ export class CircularArray<T> {
 		}
 		return this._values[index - 1];
 	}
-}
+} */
