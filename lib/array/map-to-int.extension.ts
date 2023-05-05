@@ -5,7 +5,7 @@ declare global {
 }
 
 Array.prototype.mapToInt = function(): number[] {
-    return this.map((val) => parseInt(val))
+    return this.map((val: string) => parseInt(val))
 }
 
 export {}
