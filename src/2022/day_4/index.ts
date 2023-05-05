@@ -10,9 +10,7 @@ const countOverlap = (
 			.map((e) => e.split("-").mapToInt())
 			.map((x) => Array.intRange(x[0], x[1], 1));
 
-		const result = fn(first, second);
-
-		return count + (result ? 1 : 0);
+		return count + (fn(first, second) ? 1 : 0);
 	}, 0);
 };
 
