@@ -1,4 +1,4 @@
-import "../../../lib/array.ts";
+import "../../lib/array.ts";
 
 export const part1 = (input: string[]): string => {
 	return Math.max(

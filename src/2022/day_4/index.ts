@@ -1,4 +1,4 @@
-import "../../../lib/array.ts";
+import "../../lib/array.ts";
 
 const countOverlap = (
 	input: string[],
