@@ -3,6 +3,7 @@ import * as Day2 from "./src/2022/day_2/index.ts";
 import * as Day3 from "./src/2022/day_3/index.ts";
 import * as Day4 from "./src/2022/day_4/index.ts";
 import * as Day5 from "./src/2022/day_5/index.ts";
+import * as Day6 from "./src/2022/day_6/index.ts";
 import { readInputFile } from "./utils.ts";
 
 const yearRegex = /^\d{4}$/;
@@ -39,6 +40,11 @@ const solutions: Solution[] = [
 		dateStr: "2022-5",
 		part1: async () => Day5.part1(await readInputFile("2022", "5")),
 		part2: async () => Day5.part2(await readInputFile("2022", "5")),
+	},
+	{
+		dateStr: "2022-6",
+		part1: async () => Day6.part1(await readInputFile("2022", "6")),
+		part2: async () => Day6.part2(await readInputFile("2022", "6")),
 	},
 ];
 
