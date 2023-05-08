@@ -7,16 +7,6 @@ Deno.test("Array.intRange should return [2, 4, 6, 8]", () => {
 	assertEquals([2, 4, 6, 8], result);
 });
 
-Deno.test("Array.prototype.mapToInt should return [1,2,3,4]", () => {
-	const strArr = ["1", "2", "3", "4"];
-	assertEquals([1, 2, 3, 4], strArr.mapToInt());
-});
-
-Deno.test("Array.prototype.mapToInt should return [1,2,3,4]", () => {
-	const strArr = ["1", "2", "3", "4"];
-	assertEquals([1, 2, 3, 4], strArr.mapToInt());
-});
-
 Deno.test(
 	"Array.prototype.splitByDelimiter should return [['my', 'name'], ['is']]",
 	() => {

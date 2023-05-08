@@ -1,6 +1,5 @@
 export * from './array/split-by-delimiter.extension.ts'
 export * from './array/sum.extension.ts'
-export * from './array/map-to-int.extension.ts'
 export * from './array/distinct.extension.ts'
 export * from './array/chunk.extension.ts'
 export * from './array/int-range.ts'

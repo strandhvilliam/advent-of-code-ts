@@ -22,7 +22,7 @@ const rearrange = (
 			instruction
 				.split(" ")
 				.filter((str: string) => /\d/.test(str))
-				.mapToInt()
+				.map(Number)
 		) as Instruction[];
 
 	const stacks: Stack[] = numberLine

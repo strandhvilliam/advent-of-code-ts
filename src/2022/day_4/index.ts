@@ -7,7 +7,7 @@ const countOverlap = (
 	return input.reduce((count, line) => {
 		const [first, second] = line
 			.split(",")
-			.map((e) => e.split("-").mapToInt())
+			.map((e) => e.split("-").map(Number))
 			.map((x) => Array.intRange(x[0], x[1], 1));
 
 		return count + (fn(first, second) ? 1 : 0);
