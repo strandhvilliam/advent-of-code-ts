@@ -1,12 +1,13 @@
-import * as Day1 from "./src/2022/day_1/index.ts";
-import * as Day2 from "./src/2022/day_2/index.ts";
-import * as Day3 from "./src/2022/day_3/index.ts";
-import * as Day4 from "./src/2022/day_4/index.ts";
-import * as Day5 from "./src/2022/day_5/index.ts";
-import * as Day6 from "./src/2022/day_6/index.ts";
-import * as Day7 from "./src/2022/day_7/index.ts";
-import * as Day8 from "./src/2022/day_8/index.ts";
-import * as Day9 from "./src/2022/day_9/index.ts";
+import * as Day01 from "./src/2022/01/index.ts";
+import * as Day02 from "./src/2022/02/index.ts";
+import * as Day03 from "./src/2022/03/index.ts";
+import * as Day04 from "./src/2022/04/index.ts";
+import * as Day05 from "./src/2022/05/index.ts";
+import * as Day06 from "./src/2022/06/index.ts";
+import * as Day07 from "./src/2022/07/index.ts";
+import * as Day08 from "./src/2022/08/index.ts";
+import * as Day09 from "./src/2022/09/index.ts";
+import * as Day10 from "./src/2022/10/index.ts";
 import { readInputFile } from "./utils.ts";
 
 const yearRegex = /^\d{4}$/;
@@ -20,49 +21,54 @@ interface Solution {
 
 const solutions: Solution[] = [
 	{
-		dateStr: "2022-1",
-		part1: async () => Day1.part1(await readInputFile("2022", "1")),
-		part2: async () => Day1.part2(await readInputFile("2022", "1")),
+		dateStr: "2022-01",
+		part1: async () => Day01.part1(await readInputFile("2022", "01")),
+		part2: async () => Day01.part2(await readInputFile("2022", "01")),
 	},
 	{
-		dateStr: "2022-2",
-		part1: async () => Day2.part1(await readInputFile("2022", "2")),
-		part2: async () => Day2.part2(await readInputFile("2022", "2")),
+		dateStr: "2022-02",
+		part1: async () => Day02.part1(await readInputFile("2022", "02")),
+		part2: async () => Day02.part2(await readInputFile("2022", "02")),
 	},
 	{
-		dateStr: "2022-3",
-		part1: async () => Day3.part1(await readInputFile("2022", "3")),
-		part2: async () => Day3.part2(await readInputFile("2022", "3")),
+		dateStr: "2022-03",
+		part1: async () => Day03.part1(await readInputFile("2022", "03")),
+		part2: async () => Day03.part2(await readInputFile("2022", "03")),
 	},
 	{
-		dateStr: "2022-4",
-		part1: async () => Day4.part1(await readInputFile("2022", "4")),
-		part2: async () => Day4.part2(await readInputFile("2022", "4")),
+		dateStr: "2022-04",
+		part1: async () => Day04.part1(await readInputFile("2022", "04")),
+		part2: async () => Day04.part2(await readInputFile("2022", "04")),
 	},
 	{
-		dateStr: "2022-5",
-		part1: async () => Day5.part1(await readInputFile("2022", "5")),
-		part2: async () => Day5.part2(await readInputFile("2022", "5")),
+		dateStr: "2022-05",
+		part1: async () => Day05.part1(await readInputFile("2022", "05")),
+		part2: async () => Day05.part2(await readInputFile("2022", "05")),
 	},
 	{
-		dateStr: "2022-6",
-		part1: async () => Day6.part1(await readInputFile("2022", "6")),
-		part2: async () => Day6.part2(await readInputFile("2022", "6")),
+		dateStr: "2022-06",
+		part1: async () => Day06.part1(await readInputFile("2022", "06")),
+		part2: async () => Day06.part2(await readInputFile("2022", "06")),
 	},
 	{
-		dateStr: "2022-7",
-		part1: async () => Day7.part1(await readInputFile("2022", "7")),
-		part2: async () => Day7.part2(await readInputFile("2022", "7")),
+		dateStr: "2022-07",
+		part1: async () => Day07.part1(await readInputFile("2022", "07")),
+		part2: async () => Day07.part2(await readInputFile("2022", "07")),
 	},
 	{
-		dateStr: "2022-8",
-		part1: async () => Day8.part1(await readInputFile("2022", "8")),
-		part2: async () => Day8.part2(await readInputFile("2022", "8")),
+		dateStr: "2022-08",
+		part1: async () => Day08.part1(await readInputFile("2022", "08")),
+		part2: async () => Day08.part2(await readInputFile("2022", "08")),
 	},
 	{
-		dateStr: "2022-9",
-		part1: async () => Day9.part1(await readInputFile("2022", "9")),
-		part2: async () => Day9.part2(await readInputFile("2022", "9")),
+		dateStr: "2022-09",
+		part1: async () => Day09.part1(await readInputFile("2022", "09")),
+		part2: async () => Day09.part2(await readInputFile("2022", "09")),
+	},
+	{
+		dateStr: "2022-10",
+		part1: async () => Day10.part1(await readInputFile("2022", "10")),
+		part2: async () => Day10.part2(await readInputFile("2022", "10")),
 	},
 ];
 
@@ -87,7 +93,7 @@ while (true) {
 		continue;
 	}
 
-	const day = prompt("📅 Enter Day [1-25]:");
+	const day = prompt("📅 Enter Day [DD]:");
 	if (!dayRegex.test(day!)) {
 		console.log("Invalid value. Try again.\n");
 		continue;
