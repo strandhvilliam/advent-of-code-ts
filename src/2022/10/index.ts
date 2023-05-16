@@ -43,7 +43,6 @@ export const part1 = (input: string[]) => {
 
   return loopRec(input, 1, 0, [], fn).sum().toString();
 };
-
 export const part2 = (input: string[]) => {
   const fn: SolveFunction = (xCount, cycleCount, result) => {
 
@@ -60,5 +59,3 @@ export const part2 = (input: string[]) => {
   return "\n" + final.map((r) => r.join("")).join("\n")
 
 };
-
-console.log(part2(await readTestInputFile("2022", "10")))
